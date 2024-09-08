@@ -1,0 +1,21 @@
+# s = {}
+
+# print(type(s))
+
+n = int(input("Enter no of friends : "))
+dict = {}
+
+# name = input("Enter Friend Name : ")
+# language = input("Enter Language name : ")
+# dict.update({name:language})
+
+for i in range(n):
+    name = input("Enter Friend Name : ")
+    language = input("Enter Language name : ")
+    dict.update({name:language})
+    # dict[name] = language
+    
+
+print(dict)
+
+print("\n")
