@@ -1,9 +1,21 @@
 
 fruit = [];
-
 while(fuits := input() != 'quite'):
-    fruit.append(fuits);
+    fruit.append(fruit);
 
-print("The list of fruits you entered is: ", fruit);
+
+a = True;
+
+# print(a=false)
+print(a := False);
+
+# if condition
+
+if(values := len([1,2,3,4]) > 2):
+    print(values);
+
+
+
+
 
 
