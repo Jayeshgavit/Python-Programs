@@ -1,4 +1,4 @@
-'''Calculate the Area of a Triangle'''
+''' * Calculate the Area of a Triangle'''
 
 height = float(input("Enter the Height : "))
 base = float(input("Enter the Base : "))
