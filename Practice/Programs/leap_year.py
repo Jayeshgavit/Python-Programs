@@ -3,7 +3,7 @@
 def leap_year(year):
     if year % 4 == 0:
         return f"{year} is leap year." 
-    if year % 100 ==0 and  year % 400 == 0:
+    elif year % 100 ==0 and  year % 400 == 0:
         return f"{year} is leap year."
     else:
         return f"{year} is not a leap year."
