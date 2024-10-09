@@ -9,8 +9,6 @@ where:
     . x is the variable to solve for.
 '''
 
-
-#
 import cmath
 
 a = int(input('a!=0, Enter the quadratic equation Value of a : '))
