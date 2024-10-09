@@ -7,7 +7,7 @@ print(text.center(50, "-"))
 
 def km_to_miles(km):
             km_rs = km * 0.621371
-            print(f"{km} km to {km_rs:.2f} miles".center(50, ":"))
+            print(f"{km} km to {km_rs:.2f} miles".center(30, "-"))
 
 while True:
     try:
