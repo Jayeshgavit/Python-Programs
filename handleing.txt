@@ -1,0 +1,8 @@
+This is a Practice file 
+ which is used for python file Handling
+
+ file handling append method
+hi this my data
+what are you doing ??
+hello everyone ???
+ghgh
