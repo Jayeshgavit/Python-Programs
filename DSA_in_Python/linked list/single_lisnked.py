@@ -21,7 +21,7 @@ class linkedList:
         current = self.head 
 
         while current is not None:
-            print(current.data, end=' ')
+            print(current.data, end=' > ')
             current = current.next
 
 
@@ -35,3 +35,46 @@ for i in range(n):
     a_list.append(data)
 print(' linked lsit is : ', end=' ');
 a_list.display();
+
+
+
+
+
+
+
+
+'''
+### Summary: Linked List Implementation in Python
+
+1. **Node Class**
+   - Represents each element (node) in a linked list.
+   - **Attributes**:
+     - `data`: Holds the node’s value.
+     - `next`: Points to the next node in the list (initially `None`).
+
+2. **LinkedList Class**
+   - Manages the list and provides methods to add and display nodes.
+   - **Attributes**:
+     - `head`: Points to the first node (initially `None`).
+     - `last_node`: Points to the last node to simplify adding new nodes.
+
+3. **Methods**
+   - **`append(data)`**:
+     - Adds a new node with the specified data to the end of the list.
+     - If the list is empty, the new node becomes both `head` and `last_node`.
+     - If not, links `last_node.next` to the new node and updates `last_node`.
+
+   - **`display()`**:
+     - Prints all nodes’ data in sequence from `head` to the last node.
+     - Traverses the list until `current.next` is `None`.
+
+4. **Program Flow**:
+   - User inputs the number of elements and each element’s value.
+   - Each element is added to the list with `append()`.
+   - `display()` prints the linked list in the order of insertion.
+
+5. **Example Execution**:
+   - Input: 3 elements - "apple", "banana", "cherry".
+   - Output: `apple banana cherry`.
+
+'''
