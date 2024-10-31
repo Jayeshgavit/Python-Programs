@@ -42,7 +42,7 @@ class linkedList:
     #finding references to a node with perticular info
     def nodeFind(self):
         p = self.head
-        x = input("\nEnter a node with perticular info : ")
+        x = input("\n\tEnter a node to find : ")
 
         while p is not None:
             if p.data == x:
@@ -52,16 +52,33 @@ class linkedList:
         else:
             print("\n\tNode not found")
 
+    def predecessor(self):
+        p = self.head
+        x = input("\n\tEnter a node to find predecessor : ")
+        while p.next is not None:
+            if p.next.data == x:
+                print("\n\tPredecessor of node : ", p.data)
+                break
+            p = p.next
+
 a_list = linkedList();
 n = int(input("Enter a number of element add in list : "))
 
 for i in range(n):
     data = input(f"Enter element : ")
     a_list.append(data)
-print(' linked lsit is : ', end=' ');
+print(' linked list is : ', end=' ');
 a_list.display();
+
+
 a_list.lastNode();
-a_list.lastsecondNode();
+
+if int(data) <= 1:
+    print("\n\tNot enough elements")
+else:
+    a_list.lastsecondNode();
+    a_list.predecessor()
+
 a_list.nodeFind()
 
 
