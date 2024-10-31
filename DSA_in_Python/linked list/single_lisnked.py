@@ -28,19 +28,28 @@ class linkedList:
         p = self.head
         while p.next is not None:
             p = p.next
-            print(" Last Node is : ", p.data)
+        print("\n\tLast Node is : ", p.data)
+
+    #finding last second node
+
+    def lastsecondNode(self):
+        p = self.head 
+        while p.next.next is not None:
+            p = p.next
+        print("\tSecond Last Node is : ", p.data)
+        
 
 
 a_list = linkedList();
-
-n = int(input(" Enter a number of element add in list : "))
+n = int(input("Enter a number of element add in list : "))
 
 for i in range(n):
     data = input(f"Enter element : ")
     a_list.append(data)
 print(' linked lsit is : ', end=' ');
 a_list.display();
-a_list.lastNode()
+a_list.lastNode();
+a_list.lastsecondNode();
 
 
 
