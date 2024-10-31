@@ -23,6 +23,7 @@ class linkedList:
         while current is not None:
             print(current.data, end=' > ')
             current = current.next
+
     #finding references to last node
     def lastNode(self):
         p = self.head
@@ -37,7 +38,16 @@ class linkedList:
         while p.next.next is not None:
             p = p.next
         print("\tSecond Last Node is : ", p.data)
-        
+    
+    #finding references to a node with perticular position
+    def reftoPosition(self):
+        p = self.head
+        x = int(input("\n\tEnter a position to find reference : "))
+        i = 1;
+        while i < x and p is not None:
+            p = p.next
+            i += 1
+        print("\n\t Reference info is : ", p.data)
 
     #finding references to a node with perticular info
     def nodeFind(self):
@@ -46,7 +56,7 @@ class linkedList:
 
         while p is not None:
             if p.data == x:
-                print("\n\tNode with perticular info is : ", p.data)
+                print("\n\tSuccessfully Found ", p.data)
                 break
             p = p.next
         else:
@@ -80,7 +90,7 @@ else:
     a_list.predecessor()
 
 a_list.nodeFind()
-
+a_list.reftoPosition();
 
 
 
