@@ -13,13 +13,20 @@ print("\nPzza: Rs: 60\nBurger: Rs: 50\nFries: Rs: 55\nDrinks: Rs: 55\nDesert: Rs
 
 order_total = 1;
 while True:
-    item1 = input(" Enter the item Name you want to oder : ")
+    item = input(" Enter the item Name you want to oder (close for exit) : ")
 
-    if item1 in menu.keys():
-        order_total += menu[item1]
-    elif item1 == 'quit':
+    if item in menu.keys():
+        order_total += menu[item]
+    elif item == 'close':
         print("Your order is added : ", order_total)
-        break;
+        if input(" Like to give us Tip ('yes or no'): ") == 'yes':
+            tip = int(input(" Enter the Tip : "))
+            total = tip + order_total
+            print("Your total Bill is : ", total)
+            break;
+        else:
+            print("Your total Bill is", order_total)
+            break;
     else:
         print("Item not found in menu.")
         print("please enter somehting new")
