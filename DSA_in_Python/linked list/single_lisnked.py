@@ -39,6 +39,18 @@ class linkedList:
         print("\tSecond Last Node is : ", p.data)
         
 
+    #finding references to a node with perticular info
+    def nodeFind(self):
+        p = self.head
+        x = input("\nEnter a node with perticular info : ")
+
+        while p is not None:
+            if p.data == x:
+                print("\n\tNode with perticular info is : ", p.data)
+                break
+            p = p.next
+        else:
+            print("\n\tNode not found")
 
 a_list = linkedList();
 n = int(input("Enter a number of element add in list : "))
@@ -50,6 +62,23 @@ print(' linked lsit is : ', end=' ');
 a_list.display();
 a_list.lastNode();
 a_list.lastsecondNode();
+a_list.nodeFind()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
