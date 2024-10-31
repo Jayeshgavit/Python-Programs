@@ -23,7 +23,12 @@ class linkedList:
         while current is not None:
             print(current.data, end=' > ')
             current = current.next
-
+    #finding references to last node
+    def lastNode(self):
+        p = self.head
+        while p.next is not None:
+            p = p.next
+            print(" Last Node is : ", p.data)
 
 
 a_list = linkedList();
@@ -35,6 +40,7 @@ for i in range(n):
     a_list.append(data)
 print(' linked lsit is : ', end=' ');
 a_list.display();
+a_list.lastNode()
 
 
 
