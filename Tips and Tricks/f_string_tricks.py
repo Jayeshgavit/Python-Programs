@@ -22,3 +22,11 @@ now: datetime = datetime.now()
 print(f"Now: {now:%d-%m-%y (%H:%M:%S)}")
 print(f"Now: {now:%c}")
 print(f"Now: {now:%I%p}")
+
+
+#creating Blank space linke center() function
+
+test: str = "Welcome to python" 
+print(f"{test:_>20}") #left blank or symbol followed by str
+print(f"{test:|<20}") #tight blank or symbol followed by str
+print(f"{test:*^30}") #both side
