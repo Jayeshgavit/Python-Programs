@@ -20,3 +20,5 @@ from datetime import datetime
 
 now: datetime = datetime.now()
 print(f"Now: {now:%d-%m-%y (%H:%M:%S)}")
+print(f"Now: {now:%c}")
+print(f"Now: {now:%I%p}")
