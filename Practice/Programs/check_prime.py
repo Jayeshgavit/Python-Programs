@@ -14,3 +14,6 @@ def is_prime(n):
 
 n = int(input("Enter the Number : "))
 print(is_prime(n))
+
+
+
